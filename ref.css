@@ -1,0 +1,134 @@
+body {
+  font-family: "Lexend", sans-serif;
+  margin: auto;
+  width: 100%;
+  background-image: url('https://i.postimg.cc/NG1zTDsr/Your-paragraph-text.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #0F1568;
+  padding: 10px;
+  display: block;
+}
+header {
+  background-color: #8b2c2c;
+  padding: 16px;
+  box-shadow: 10px 5px 10px #aaaaaa;
+}
+header img {
+  width: 190px;
+}
+header a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  padding: 12px;
+  display: flex;
+}
+header a:hover {
+  color: #f5e6cc;
+  font-size: 18px;
+  transform: translateY(-10px);
+  z-index: 2;
+  transition: all 0.4s;
+  position: relative;
+}
+.navbar a:hover {
+  font-size: 18px;
+  transform: translateY(-10px);
+  z-index: 2;
+  transition: all 0.4s;
+  position: relative;
+  color: black;
+}
+.content a{
+  font-size: 25px;
+  display: block;
+  margin-bottom: 20px;
+}
+.desktop-links {
+  display: flex;
+  gap: 10px;
+}
+.desktop-links a {
+  color: white;
+}
+.phone-dropdown {
+  margin-right: 115px;
+  display: none;
+}
+.phone-dropdown:hover .dropdown-menu{
+  display: block;
+}
+.phone-dropdown .dropdown-menu{
+  width: 100%;
+}
+h2 {
+  margin-top: 150px;
+  font-size: 50px;
+}
+h3 {
+  font-family: "Stoke", serif;
+  font-size: 20px;
+}
+footer {
+  background-color: #8b2c2c;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+footer a, p{
+  color: white;
+}
+footer a:hover{
+  font-size: 18px;
+  transform: translateY(-10px);
+  z-index: 2;
+  transition: all 0.4s;
+  position: relative;
+  color: white;
+}
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 28px;
+    margin-top: 200px;
+  }
+  h1 {
+    font-size: 120px;
+  }
+  .desktop-links{
+        display: none;
+    }
+   .phone-dropdown {
+      display: block;
+    }
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 22px;
+    margin-top: 200px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
